@@ -1,0 +1,22 @@
+commit-msg:
+  scripts:
+    'commit_check':
+      runner: bash
+
+pre-commit:
+  parallel: true
+  commands:
+    spellcheck:
+      run: pnpm cspell {staged_files} --no-must-find-files
+    markdown:
+      run: pnpm markdownlint-cli2 {staged_files}
+      glob: '*.{md,markdown}'
+      exclude:
+        - .changeset/*.md
+    prettier:
+      run: pnpm prettier {staged_files} --ignore-unknown --write
+      stage_fixed: true
+    lint:
+      glob: '*.{js,jsx,ts,tsx,cjs,mjs,cts,mts}'
+      run: pnpm eslint {staged_files} --fix
+      stage_fixed: true

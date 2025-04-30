@@ -1,0 +1,109 @@
+{
+  "name": "starter-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A comprehensive Next.js starter-kit",
+  "license": "MIT",
+  "author": "Ahmed Elsakaan",
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "commit": "git-cz",
+    "dev": "next dev --turbopack",
+    "format": "pnpm format:check --write",
+    "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
+    "lint": "next lint --dir . --max-warnings=0",
+    "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\" \"!node_modules\" \"!.changeset\" \"!CHANGELOG.md\"",
+    "release": "changeset tag && git push --follow-tags",
+    "spellcheck": "cspell \"**\" --gitignore --dot --no-progress --unique",
+    "start": "next start",
+    "test": "vitest --workspace=vitest.workspace.ts --browser.headless --run",
+    "test:browser": "vitest --workspace=vitest.workspace.ts",
+    "test:watch": "vitest --workspace=vitest.workspace.ts --browser.headless",
+    "typecheck": "tsc"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.0",
+    "arktype": "^2.1.20",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.503.0",
+    "next": "^15.3.1",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.2.0"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.2",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/cz-commitlint": "^19.8.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
+    "@eslint-react/eslint-plugin": "^1.48.5",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.25.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@next/eslint-plugin-next": "^15.3.1",
+    "@playwright/test": "^1.52.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.0",
+    "@types/eslint-plugin-security": "^3.0.0",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/utils": "^8.31.1",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vitest/browser": "^3.1.2",
+    "commitizen": "^4.3.1",
+    "cspell": "^8.19.3",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.25.1",
+    "eslint-config-next": "^15.3.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-drizzle": "^0.2.3",
+    "eslint-plugin-import-x": "^4.11.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-react-hooks": "6.0.0-rc.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-unicorn": "^59.0.0",
+    "globals": "^16.0.0",
+    "lefthook": "^1.11.12",
+    "markdownlint": "^0.37.4",
+    "markdownlint-cli2": "^0.17.2",
+    "playwright": "^1.52.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.10",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.1.4",
+    "tw-animate-css": "^1.2.8",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.2",
+    "vitest-browser-react": "^0.1.1"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "volta": {
+    "node": "22.15.0",
+    "pnpm": "10.10.0"
+  }
+}

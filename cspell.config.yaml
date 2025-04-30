@@ -1,0 +1,27 @@
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+version: '0.2'
+ignorePaths:
+  - .git
+  - .gitignore
+  - .todo
+  - .next
+  - node_modules
+  - next-env.d.ts
+  - pnpm-lock.yaml
+  - '*.svg'
+  - .vscode/extensions.json
+  - migrations
+language: en-US,en-GB
+words:
+  - arktype
+  - commitlint
+  - elsakaan
+  - ianvs
+  - ixahmedxi
+  - lefthook
+  - oklch
+  - turbopack
+  - unrs
+  - esbuild
+  - vitest
+  - valibot

@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "arktypeio.arkdark",
+    "streetsidesoftware.code-spell-checker",
+    "mikestead.dotenv",
+    "EditorConfig.EditorConfig",
+    "dsznajder.es7-react-js-snippets",
+    "dbaeumer.vscode-eslint",
+    "tamasfe.even-better-toml",
+    "DavidAnson.vscode-markdownlint",
+    "unifiedjs.vscode-mdx",
+    "esbenp.prettier-vscode",
+    "YoavBls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

@@ -1,0 +1,43 @@
+name: 🚀 Release
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: 🚀 Release
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: 📥 Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: 🟢 Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: 📦 Install dependencies
+        run: pnpm install
+
+      - name: 📤 Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          title: 'Changeset: Version packages'
+          commit: 'version packages'
+          version: pnpm changeset version
+          publish: pnpm release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
