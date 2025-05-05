@@ -1,26 +1,30 @@
 {
-  "name": "starter-kit",
+  "name": "unverceled-nextjs",
   "version": "0.1.0",
   "private": true,
-  "description": "A comprehensive Next.js starter-kit",
+  "description": "A Next.js starter-kit without Vercel",
   "license": "MIT",
   "author": "Ahmed Elsakaan",
   "type": "module",
   "scripts": {
     "build": "next build",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "commit": "git-cz",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "dev": "next dev --turbopack",
     "format": "pnpm format:check --write",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
     "lint": "next lint --dir . --max-warnings=0",
     "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\" \"!node_modules\" \"!.changeset\" \"!CHANGELOG.md\"",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "release": "changeset tag && git push --follow-tags",
     "spellcheck": "cspell \"**\" --gitignore --dot --no-progress --unique",
     "start": "next start",
     "test": "vitest --workspace=vitest.workspace.ts --browser.headless --run",
     "test:browser": "vitest --workspace=vitest.workspace.ts",
     "test:watch": "vitest --workspace=vitest.workspace.ts --browser.headless",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload"
   },
   "commitlint": {
     "extends": [
@@ -33,6 +37,7 @@
     }
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "1.0.0-beta.4",
     "@t3-oss/env-nextjs": "^0.13.4",
     "arktype": "^2.1.20",
     "class-variance-authority": "^0.7.1",
@@ -56,6 +61,7 @@
     "@eslint/js": "^9.26.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@next/eslint-plugin-next": "^15.3.1",
+    "@opennextjs/aws": "3.5.7",
     "@playwright/test": "^1.52.0",
     "@tailwindcss/postcss": "^4.1.5",
     "@total-typescript/ts-reset": "^0.6.1",
@@ -96,7 +102,8 @@
     "typescript-eslint": "^8.31.1",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.1.3",
-    "vitest-browser-react": "^0.1.1"
+    "vitest-browser-react": "^0.1.1",
+    "wrangler": "^4.14.1"
   },
   "packageManager": "pnpm@10.10.0",
   "engines": {

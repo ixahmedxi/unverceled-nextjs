@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "unverceled-nextjs",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-05-05",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env",
+  ],
+  "minify": true,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".open-next/assets",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "placement": { "mode": "smart" },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "unverceled-nextjs",
+    },
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "NEXT_INC_CACHE_KV",
+      "id": "b9d14ee0f033408d92dee24e9f13ed01",
+    },
+  ],
+  "d1_databases": [
+    {
+      "binding": "NEXT_TAG_CACHE_D1",
+      "database_name": "unverceled-nextjs-tag-cache",
+      "database_id": "f144cfb1-5aa6-4bf7-9c63-c30449d5ddb2",
+    },
+  ],
+}

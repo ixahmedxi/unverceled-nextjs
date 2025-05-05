@@ -3,3 +3,4 @@ onlyBuiltDependencies:
   - lefthook
   - sharp
   - unrs-resolver
+  - workerd

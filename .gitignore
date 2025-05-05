@@ -145,3 +145,7 @@ dist
 # Misc
 .DS_Store
 .todo
+
+# OpenNext
+.open-next
+.wrangler

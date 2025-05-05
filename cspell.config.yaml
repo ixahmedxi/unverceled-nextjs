@@ -11,18 +11,23 @@ ignorePaths:
   - '*.svg'
   - .vscode/extensions.json
   - migrations
+  - cloudflare-env.d.ts
 language: en-US,en-GB
 words:
   - arktype
   - commitlint
   - elsakaan
+  - esbenp
+  - esbuild
   - ianvs
   - ixahmedxi
-  - esbenp
   - lefthook
+  - nextjs
   - oklch
+  - opennextjs
   - turbopack
   - unrs
-  - esbuild
-  - vitest
+  - unverceled
   - valibot
+  - vitest
+  - workerd

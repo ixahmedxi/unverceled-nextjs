@@ -1,9 +1,7 @@
 import { createEnv } from '@t3-oss/env-nextjs'
-import { vercel } from '@t3-oss/env-nextjs/presets-zod'
 import { type } from 'arktype'
 
 export const env = createEnv({
-  extends: [vercel()],
   shared: {
     NODE_ENV: type("'development' | 'production' | 'test' | undefined").pipe(
       (v) => v ?? 'development',
