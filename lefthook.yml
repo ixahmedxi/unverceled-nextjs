@@ -18,5 +18,5 @@ pre-commit:
       stage_fixed: true
     lint:
       glob: '*.{js,jsx,ts,tsx,cjs,mjs,cts,mts}'
-      run: pnpm eslint {staged_files} --fix
+      run: pnpm eslint {staged_files} --fix --no-warn-ignored
       stage_fixed: true
