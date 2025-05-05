@@ -23,7 +23,8 @@ This template is only a basic "Hello World" page, however all of the tooling tha
 1. Use this template to create a new repository
 2. Clone the template to your machine
 3. Run `pnpm install`
-4. To deploy to cloudflare, run `pnpm wrangler login` first then you can just run `pnpm run deploy`
+4. Edit the `wrangler.jsonc` file and put your own KV namespace id and D1 Database name & id.
+5. To deploy to cloudflare, run `pnpm wrangler login` first then you can just run `pnpm run deploy`
 
 It's that simple!
 

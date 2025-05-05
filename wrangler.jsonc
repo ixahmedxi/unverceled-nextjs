@@ -22,12 +22,15 @@
       "service": "unverceled-nextjs",
     },
   ],
+  // Add your own KV namespaces here
   "kv_namespaces": [
     {
       "binding": "NEXT_INC_CACHE_KV",
       "id": "b9d14ee0f033408d92dee24e9f13ed01",
     },
   ],
+
+  // Add your own D1 database name and id here
   "d1_databases": [
     {
       "binding": "NEXT_TAG_CACHE_D1",
