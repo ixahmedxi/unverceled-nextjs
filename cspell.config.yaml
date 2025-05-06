@@ -11,10 +11,10 @@ ignorePaths:
   - '*.svg'
   - .vscode/extensions.json
   - migrations
-  - cloudflare-env.d.ts
 language: en-US,en-GB
 words:
   - arktype
+  - awscli
   - commitlint
   - elsakaan
   - esbenp

@@ -19,7 +19,7 @@ const compat = new FlatCompat({
 /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} */
 export default defineConfig(
   {
-    ignores: ['node_modules', '.next', 'cloudflare-env.d.ts'],
+    ignores: ['node_modules', '.next', '.sst', 'sst.config.ts', 'sst-env.d.ts'],
   },
 
   js.configs.recommended,

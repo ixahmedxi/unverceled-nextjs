@@ -146,6 +146,5 @@ dist
 .DS_Store
 .todo
 
-# OpenNext
-.open-next
-.wrangler
+# sst
+.sst
