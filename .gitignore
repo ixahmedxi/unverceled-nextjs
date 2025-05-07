@@ -149,3 +149,4 @@ dist
 # OpenNext
 .open-next
 .wrangler
+.*.vars
