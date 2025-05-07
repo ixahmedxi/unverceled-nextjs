@@ -7,6 +7,8 @@ compatibility_flags = [
 ]
 minify = true
 
+keep_names = false
+
 [assets]
 binding = "ASSETS"
 directory = ".open-next/assets"

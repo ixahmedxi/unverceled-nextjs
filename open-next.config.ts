@@ -3,10 +3,11 @@ import kvIncrementalCache from '@opennextjs/cloudflare/overrides/incremental-cac
 import memoryQueue from '@opennextjs/cloudflare/overrides/queue/memory-queue'
 import d1TagCache from '@opennextjs/cloudflare/overrides/tag-cache/d1-next-tag-cache'
 
-import type {} from '@opennextjs/aws/types/open-next.js'
-
 export default defineCloudflareConfig({
   incrementalCache: kvIncrementalCache,
   tagCache: d1TagCache,
   queue: memoryQueue,
+
+  // Change this to false if you are using PPR
+  enableCacheInterception: true,
 })
