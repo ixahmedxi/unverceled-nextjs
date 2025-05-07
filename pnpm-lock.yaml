@@ -75,9 +75,6 @@ importers:
       '@next/eslint-plugin-next':
         specifier: ^15.3.2
         version: 15.3.2
-      '@opennextjs/aws':
-        specifier: 3.6.0
-        version: 3.6.0
       '@playwright/test':
         specifier: ^1.52.0
         version: 1.52.0
