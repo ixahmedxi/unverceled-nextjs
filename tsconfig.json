@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "allowJs": true,
     "checkJs": true,
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
