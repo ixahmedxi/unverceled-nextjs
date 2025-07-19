@@ -1,3 +1,34 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=ixahmedxi&project=unverceled-nextjs&lang=id">Bahasa Indonesia</a>
+      </div>
+    </div>
+  </details>
+</div>
+
 # Unverceled Next.js
 
 > A Tooling Heavy Next.js 15 starter-kit template deployed to Cloudflare Workers using OpenNext.
